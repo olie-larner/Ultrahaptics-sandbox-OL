@@ -229,6 +229,7 @@
 .nav-bar__cont {
   width: 90%;
   max-width: 1600px;
+  height: 65px;
   margin: 0 auto;
   display: flex;
 }

@@ -54,7 +54,7 @@ class NavBar extends React.Component {
               alt="UH"
             />
           </div>
-          <ul>
+          <ul className="hidden sm:block">
             <li>Technology</li>
             <li>Use Cases</li>
             <li>Company</li>
