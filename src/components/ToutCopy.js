@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import Fade from "react-reveal/Fade";
 import ToutText from "./ToutText";
 import ToutHeader from "./ToutHeader";

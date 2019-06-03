@@ -72,10 +72,16 @@
 
 .tout-overlap {
   background-image: url(https://source.unsplash.com/user/erondu/800x600);
-  background-size: 75% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-bottom: 70px;
   padding-top: 70px;
+}
+
+@media only screen and (min-width: 640px) {
+  .tout-overlap {
+    background-size: 75% 100%;
+  }
 }
 
 .toutCopy--overlap {
@@ -108,6 +114,11 @@
 .background-big-text {
   font-size: 450px;
   color: #e2e2e2;
+}
+
+#big-text-trigger {
+  position: absolute;
+  top: -5vh;
 }
 
 .foreground-little-text {
@@ -150,7 +161,11 @@
   color: #fff;
 }
 
-.bg-purple .cta,
+.bg-purple .cta {
+  background-color: #ffffff;
+  color: #7535de;
+}
+
 .toutContent-bg-purple .cta {
   background-color: #7535de;
 }
@@ -172,13 +187,16 @@
   background-color: transparent;
   position: fixed;
   top: 0;
-  display: flex;
   z-index: 1;
-  transition: top 0.4s;
+  transition: all 0.4s;
 }
 
 .nav-bar--hidden {
   top: -65px;
+}
+
+.nav-bar--darken {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .nav-bar ul {
@@ -198,15 +216,21 @@
 }
 
 .nav-bar__logo {
-  background-color: #00cf75;
-  color: #fff;
   align-items: center;
   text-align: center;
-  width: 250px;
+  max-width: 193px;
+  display: flex;
 }
 
 .nav-bar-body-scroll {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar__cont {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
 }
 
 /* Article Cards (ALL CHANGE) */
@@ -266,14 +290,6 @@
   right: 0;
   position: absolute;
   z-index: -1;
-}
-
-.article-card:hover::after {
-  opacity: 0;
-}
-
-.article-card:hover {
-  background-color: #00cf75;
 }
 
 .article-header {
@@ -432,6 +448,12 @@
 
 .slick-dots li.slick-active {
   border-top: 5px solid #333;
+}
+
+.slick-slider {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
 }
 
 /* DUMMY PAGE HERO */

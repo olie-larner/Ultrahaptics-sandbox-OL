@@ -1,6 +1,4 @@
-import React, { Fragment } from "react";
-import ReactDOM from "react-dom";
-import Fade from "react-reveal/Fade";
+import React from "react";
 
 const ToutText = props => (
   <div className="toutText mr-3 sm:mx-0">

@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-import OnVisible, { setDefaultProps } from "react-on-visible";
+import OnVisible from "react-on-visible";
 import ArticleHeader from "./ArticleHeader";
 import ViewArticle from "./ViewArticle";
 

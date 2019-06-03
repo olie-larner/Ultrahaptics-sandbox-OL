@@ -22,9 +22,9 @@ const BigText = props => (
         {progress => (
           <Tween
             to={{
-              left: "-200%"
+              left: "-300%"
             }}
-            ease="Strong.easeInOut"
+            ease="easeInOut"
             totalProgress={progress}
             paused
           >

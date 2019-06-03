@@ -4,7 +4,7 @@ import { Parallax } from "react-scroll-parallax";
 import BigText from "./BigText";
 
 const BigTextLittleText = props => (
-  <div className="w-full relative">
+  <div className="w-full overflow-hidden relative">
     <div id="big-text-trigger" />
     <Parallax
       className="leading-none absolute left-0 right-0 pb-32 hidden sm:block"

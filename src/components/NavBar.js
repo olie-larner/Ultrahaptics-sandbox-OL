@@ -23,30 +23,44 @@ class NavBar extends React.Component {
 
   handleScroll = () => {
     const { prevScrollpos } = this.state;
-
     const currentScrollPos = window.pageYOffset;
     const visible = prevScrollpos > currentScrollPos;
+    const pageHero = document.querySelector(".page-hero").clientHeight;
+    const darken = pageHero < currentScrollPos;
 
     this.setState({
       prevScrollpos: currentScrollPos,
-      visible
+      visible,
+      darken
     });
   };
 
   render() {
     return (
       <div
-        className={classnames("nav-bar", {
-          "nav-bar--hidden": !this.state.visible
-        })}
+        className={classnames(
+          "nav-bar hidden sm:flex",
+          {
+            "nav-bar--hidden": !this.state.visible
+          },
+          { "nav-bar--darken": this.state.darken }
+        )}
       >
-        <div className="nav-bar__logo">LOGO</div>
-        <ul>
-          <li>Technology</li>
-          <li>Use Cases</li>
-          <li>Company</li>
-          <li>Create</li>
-        </ul>
+        <div className="nav-bar__cont">
+          <div className="nav-bar__logo">
+            <img
+              src="https://mrb-code-handover-area.s3.eu-west-2.amazonaws.com/Sandbox/uh-white-logo.png"
+              width="100%"
+              alt="UH"
+            />
+          </div>
+          <ul>
+            <li>Technology</li>
+            <li>Use Cases</li>
+            <li>Company</li>
+            <li>Create</li>
+          </ul>
+        </div>
       </div>
     );
   }
