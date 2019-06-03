@@ -39,7 +39,7 @@ class NavBar extends React.Component {
     return (
       <div
         className={classnames(
-          "nav-bar hidden sm:flex",
+          "nav-bar flex",
           {
             "nav-bar--hidden": !this.state.visible
           },
