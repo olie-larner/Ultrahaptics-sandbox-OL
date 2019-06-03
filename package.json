@@ -1,0 +1,36 @@
+{
+  "name": "olie-larner-article-card",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "classnames": "2.2.6",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-gsap": "1.2.0",
+    "react-on-visible": "1.6.0",
+    "react-reveal": "1.2.2",
+    "react-scripts": "2.1.8",
+    "react-scroll-parallax": "2.1.2",
+    "react-scrollmagic": "2.1.0",
+    "react-slick": "0.24.0",
+    "styled-components": "4.2.0",
+    "tailwindcss": "1.0.1"
+  },
+  "devDependencies": {
+    "typescript": "3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
