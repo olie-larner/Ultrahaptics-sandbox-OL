@@ -202,11 +202,11 @@
 .nav-bar ul {
   list-style-type: none;
   margin-left: auto;
-  display: inline-block;
   width: auto;
 }
 
 .nav-bar ul li {
+  display: inline-block;
   padding: 20px;
   color: #ffffff;
   font-size: 17px;
